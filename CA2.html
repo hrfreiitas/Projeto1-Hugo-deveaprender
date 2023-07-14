@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess Whos is Them!</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- <h1> Guess Whos is Them ?</h1> -->
+    </header>
+    <main>
+      <div id="imageContainer">
+        <div id="quizImage" class="gallery">
+          <img
+            src="https://deadline.com/wp-content/uploads/2019/10/guess-who-yellow-logo.png"
+            alt="Quiz Image"
+          />
+        </div>
+      </div>
+      <div id="countdown"></div>
+      <div id="score"></div>
+      <div class="container">
+        <form id="quizForm">
+          <label for="user-answer">Your Answer:</label>
+          <input type="text" id="user-answer" name="user-answer" required />
+          <button type="submit" id="submit-answer" onClick="keepValueLocalStorage()">Submit</button>
+        </form>
+
+        <div class="startButtonContainer">
+          <button id="startButton" onClick="startQuiz(true)">Start Quiz</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Guess Game</p>
+      <p>Hugo Rodrigues de Freitas</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
